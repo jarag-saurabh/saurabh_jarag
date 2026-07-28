@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Jarag | Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SJ.</div>
+        <div class="header-right" style="display: flex; align-items: center; gap: 1.5rem;">
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Saurabh Jarag</span></h1>
+                <h2 class="typewriter-container">I'm a <span class="typing-text"></span><span class="cursor">|</span></h2>
+                <p>Passionate about building dynamic web applications and scalable solutions.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn primary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-shape"></div>
+                <div class="code-window glass-card">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code>
+<span style="color: #c678dd;">&lt;?php</span>
+<span style="color: #e5c07b;">class</span> <span style="color: #61afef;">Developer</span> {
+    <span style="color: #e5c07b;">public</span> <span style="color: #e06c75;">$name</span> = <span style="color: #98c379;">'Saurabh Jarag'</span>;
+    <span style="color: #e5c07b;">public</span> <span style="color: #e06c75;">$skills</span> = [<span style="color: #98c379;">'PHP'</span>, <span style="color: #98c379;">'Full Stack'</span>];
+    
+    <span style="color: #e5c07b;">public function</span> <span style="color: #61afef;">code</span>() {
+        <span style="color: #c678dd;">return</span> <span style="color: #98c379;">"Building scalable solutions"</span>;
+    }
+}
+<span style="color: #c678dd;">?&gt;</span>
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content glass-card">
+                <p>PHP Developer with hands-on experience in developing ERP, HRMS, and Logistics Management applications using PHP and CodeIgniter Framework. Skilled in MySQL, Microsoft SQL Server (MSSQL), JavaScript, jQuery, AJAX, Bootstrap, HTML, CSS, and WordPress. Experienced in building dynamic web applications, database optimization, API integration, report generation, and business process automation.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +91 7304397083 (Call)</p>
+                    <p><i class="fab fa-whatsapp"></i> +91 8169140591 (WhatsApp)</p>
+                    <p><i class="fas fa-envelope"></i> jaragsaurabh@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">PHP</div>
+                <div class="skill-card">CodeIgniter 3</div>
+                <div class="skill-card">MySQL</div>
+                <div class="skill-card">MSSQL</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">jQuery</div>
+                <div class="skill-card">AJAX</div>
+                <div class="skill-card">Bootstrap</div>
+                <div class="skill-card">WordPress</div>
+                <div class="skill-card">MVC Architecture</div>
+                <div class="skill-card">HTML / CSS</div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="date">Sept 2024 - Present</div>
+                    <h3>PHP Developer</h3>
+                    <h4>Ekodex Technologies Pvt. Ltd.</h4>
+                    <ul>
+                        <li>Developed and maintained ERP, HRMS, and web-based applications using PHP and CodeIgniter.</li>
+                        <li>Designed HRMS modules including Employee, Attendance, and Leave Management.</li>
+                        <li>Contributed to a Logistics Management System (Inventory, Stock, Containers, Invoices).</li>
+                        <li>Developed dynamic forms, CRUD operations, advanced search filters, and reports.</li>
+                        <li>Optimized SQL queries and managed databases with MySQL and MSSQL.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="date">Mar 2024 - Sept 2024</div>
+                    <h3>Web Developer Intern</h3>
+                    <h4>Alive Inc.</h4>
+                    <ul>
+                        <li>Worked on front-end and back-end development for web applications.</li>
+                        <li>Maintained both WordPress and custom-coded websites.</li>
+                        <li>Overcame technical challenges and improved problem-solving skills.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <div class="project-card glass-card text-center" style="max-width: 350px; width: 100%;">
+                    <h3>Scholarbook</h3>
+                    <p style="color: var(--text-secondary); margin: 10px 0;">A full-stack online store and e-commerce platform built with a comprehensive backend for seamless shopping.</p>
+                    <a href="https://scholarbook.in/" target="_blank" class="btn primary mt-4" style="text-decoration: none;">Visit Store</a>
+                </div>
+                <div class="project-card glass-card text-center" style="max-width: 350px; width: 100%;">
+                    <h3>Orozone Store</h3>
+                    <p style="color: var(--text-secondary); margin: 10px 0;">A robust online store and e-commerce web application featuring a modern user interface and optimized product browsing.</p>
+                    <a href="https://orozone.in/uatweb/" target="_blank" class="btn primary mt-4" style="text-decoration: none;">Visit Store</a>
+                </div>
+                <div class="project-card glass-card text-center" style="max-width: 350px; width: 100%;">
+                    <h3>HRMS & CMS Panels</h3>
+                    <p style="color: var(--text-secondary); margin: 10px 0;">Enterprise-level administrative panels featuring advanced employee management, content control, and business automation.</p>
+                    <a href="#contact" class="btn primary mt-4" style="text-decoration: none;">Ask for Demo</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact-section">
+             <h2 class="section-title">Let's Connect</h2>
+             <div class="glass-card text-center">
+                 <h3>Saurabh Jarag</h3>
+                 <p>Available for opportunities</p>
+                 <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                     <a href="mailto:jaragsaurabh@gmail.com" class="btn primary mt-4">Email Me</a>
+                     <a href="https://wa.me/918169140591" target="_blank" class="btn primary mt-4" style="background: #25D366; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);">WhatsApp Me</a>
+                     <a href="tel:+917304397083" class="btn primary mt-4">Call Me</a>
+                 </div>
+             </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Saurabh Jarag. All rights reserved.</p>
+    </footer>
+
+    <!-- Floating Badge -->
+    <div class="floating-badge">
+        <button id="theme-toggle-floating" class="badge-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+        <a href="mailto:jaragsaurabh@gmail.com" class="badge-btn" title="Email Me"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/918169140591" target="_blank" class="badge-btn" title="WhatsApp Me"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+917304397083" class="badge-btn" title="Call Me"><i class="fas fa-phone"></i></a>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
