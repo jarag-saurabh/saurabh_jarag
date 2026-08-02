@@ -92,4 +92,26 @@ document.addEventListener("DOMContentLoaded", () => {
             navMenu.classList.remove('active');
         });
     });
+
+    // Scrollspy for Navigation Links
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('#nav-menu ul li a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            // offset down by 200px to trigger earlier
+            if (pageYOffset >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
 });

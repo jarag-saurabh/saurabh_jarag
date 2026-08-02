@@ -66,12 +66,17 @@ nav ul {
 nav ul li a {
     color: var(--text-primary);
     text-decoration: none;
-    font-weight: 400;
-    transition: color 0.3s;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 20px;
 }
 
-nav ul li a:hover {
-    color: var(--accent-color);
+nav ul li a:hover,
+nav ul li a.active {
+    color: white;
+    background: var(--accent-gradient);
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
 }
 
 .icon-btn {
@@ -444,6 +449,26 @@ footer {
     padding: 2rem;
     border-top: 1px solid var(--glass-border);
     color: var(--text-secondary);
+}
+
+/* Contact Info in About Section */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.contact-info p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info i {
+    color: var(--accent-color);
 }
 
 /* Responsive - Tablets (up to 1024px) */
